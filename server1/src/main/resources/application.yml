@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        #nacos服务注册
+        server-addr: 8.142.1.163:8848
+        namespace: b7b35155-fb8f-4f59-b977-21de4aab5b25
+  application:
+    name: ribbon-study
+server:
+  port: 8001

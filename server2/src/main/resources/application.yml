@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        #nacos服务注册
+        server-addr: 8.142.1.163:8848
+        namespace: b7b35155-fb8f-4f59-b977-21de4aab5b25
+    loadbalancer:
+      retry:
+        enabled: false
+
+  application:
+    name: ribbon-study-client
+  profiles:
+    active: dev
+server:
+  port: 8003
+
+ribbon:
+  ConnectTimeOut: 3000
+  ReadTimeOut: 6000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: false
+
